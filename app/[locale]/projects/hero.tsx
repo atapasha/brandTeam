@@ -41,109 +41,110 @@ interface Client {
   category: CategoryId;
 }
 
+// انتقال دیتای ثابت به خارج از کامپوننت جهت جلوگیری از Re-creation
+const clients: Client[] = [
+  { id: 1, name: "Redbull", image: "logo-1.svg", category: "branding" },
+  { id: 2, name: "Salesforce", image: "logo-2.svg", category: "development" },
+  { id: 3, name: "Microsoft", image: "logo-3.svg", category: "uxui" },
+  { id: 4, name: "Spotify", image: "logo-4.svg", category: "branding" },
+  { id: 5, name: "Lyft", image: "logo-5.svg", category: "development" },
+  { id: 6, name: "Coca-Cola", image: "logo-6.svg", category: "uxui" },
+  { id: 7, name: "Under Armour", image: "logo-7.svg", category: "uxui" },
+  { id: 8, name: "Slack", image: "logo-1.svg", category: "analytics" },
+  { id: 9, name: "LinkedIn", image: "logo-2.svg", category: "marketing" },
+  { id: 10, name: "Figma", image: "logo-3.svg", category: "research" },
+  { id: 11, name: "Sony", image: "logo-4.svg", category: "strategy" },
+];
+
+const projects: Project[] = [
+  {
+    id: 1,
+    name: "Sony",
+    video:
+      "https://videos.pexels.com/video-files/6572598/6572598-hd_1920_1080_25fps.mp4",
+    category: "branding",
+    size: "col-span-12 md:col-span-4 row-span-1",
+    imageHeight: "h-80",
+  },
+  {
+    id: 2,
+    name: "Adidas",
+    video:
+      "https://videos.pexels.com/video-files/4126123/4126123-uhd_2732_1440_25fps.mp4",
+    category: "development",
+    size: "col-span-12 md:col-span-4",
+    imageHeight: "h-48",
+  },
+  {
+    id: 3,
+    name: "Tokyo Roast",
+    video:
+      "https://videos.pexels.com/video-files/2909914/2909914-uhd_2732_1440_24fps.mp4",
+    category: "uxui",
+    size: "col-span-12 md:col-span-4",
+    imageHeight: "h-48",
+  },
+  {
+    id: 4,
+    name: "Spotify",
+    video:
+      "https://videos.pexels.com/video-files/5077471/5077471-uhd_1440_2732_25fps.mp4",
+    category: "strategy",
+    size: "col-span-12 row-span-2",
+    imageHeight: "h-[600px]",
+  },
+  {
+    id: 5,
+    name: "Ecomworld",
+    video:
+      "https://videos.pexels.com/video-files/5585939/5585939-hd_1920_1080_25fps.mp4",
+    category: "branding",
+    size: "col-span-12 md:col-span-6 row-span-1",
+    imageHeight: "h-80",
+  },
+  {
+    id: 6,
+    name: "Toyota",
+    video:
+      "https://videos.pexels.com/video-files/4419251/4419251-hd_1920_1080_25fps.mp4",
+    category: "uxui",
+    size: "col-span-12 md:col-span-6 row-span-1",
+    imageHeight: "h-80",
+  },
+  {
+    id: 7,
+    name: "Visa",
+    video:
+      "https://videos.pexels.com/video-files/3945147/3945147-uhd_2732_1440_25fps.mp4",
+    category: "strategy",
+    size: "col-span-12 md:col-span-3 row-span-1",
+    imageHeight: "h-44",
+  },
+  {
+    id: 8,
+    name: "Tesla",
+    video:
+      "https://videos.pexels.com/video-files/27421705/12140050_2730_1440_30fps.mp4",
+    category: "analytics",
+    size: "col-span-12 md:col-span-3 row-span-1",
+    imageHeight: "h-44",
+  },
+  {
+    id: 9,
+    name: "Nike",
+    video:
+      "https://videos.pexels.com/video-files/8533114/8533114-uhd_2560_1440_25fps.mp4",
+    category: "marketing",
+    size: "col-span-12 md:col-span-6 row-span-2",
+    imageHeight: "h-96",
+  },
+];
+
 const Hero = () => {
   const t = useTranslations("ProjectsPage");
 
   const [activeTab, setActiveTab] = useState<TabId>("projects");
   const [activeCategory, setActiveCategory] = useState<CategoryId>("all");
-
-  const clients: Client[] = [
-    { id: 1, name: "Redbull", image: "logo-1.svg", category: "branding" },
-    { id: 2, name: "Salesforce", image: "logo-2.svg", category: "development" },
-    { id: 3, name: "Microsoft", image: "logo-3.svg", category: "uxui" },
-    { id: 4, name: "Spotify", image: "logo-4.svg", category: "branding" },
-    { id: 5, name: "Lyft", image: "logo-5.svg", category: "development" },
-    { id: 6, name: "Coca-Cola", image: "logo-6.svg", category: "uxui" },
-    { id: 7, name: "Under Armour", image: "logo-7.svg", category: "uxui" },
-    { id: 8, name: "Slack", image: "logo-1.svg", category: "analytics" },
-    { id: 9, name: "LinkedIn", image: "logo-2.svg", category: "marketing" },
-    { id: 10, name: "Figma", image: "logo-3.svg", category: "research" },
-    { id: 11, name: "Sony", image: "logo-4.svg", category: "strategy" },
-  ];
-
-  const projects: Project[] = [
-    {
-      id: 1,
-      name: "Sony",
-      video:
-        "https://videos.pexels.com/video-files/6572598/6572598-hd_1920_1080_25fps.mp4",
-      category: "branding",
-      size: "col-span-12 md:col-span-4 row-span-1",
-      imageHeight: "h-80",
-    },
-    {
-      id: 2,
-      name: "Adidas",
-      video:
-        "https://videos.pexels.com/video-files/4126123/4126123-uhd_2732_1440_25fps.mp4",
-      category: "development",
-      size: "col-span-12 md:col-span-4",
-      imageHeight: "h-48",
-    },
-    {
-      id: 3,
-      name: "Tokyo Roast",
-      video:
-        "https://videos.pexels.com/video-files/2909914/2909914-uhd_2732_1440_24fps.mp4",
-      category: "uxui",
-      size: "col-span-12 md:col-span-4",
-      imageHeight: "h-48",
-    },
-    {
-      id: 4,
-      name: "Spotify",
-      video:
-        "https://videos.pexels.com/video-files/5077471/5077471-uhd_1440_2732_25fps.mp4",
-      category: "strategy",
-      size: "col-span-12 row-span-2",
-      imageHeight: "h-[600px]",
-    },
-    {
-      id: 5,
-      name: "Ecomworld",
-      video:
-        "https://videos.pexels.com/video-files/5585939/5585939-hd_1920_1080_25fps.mp4",
-      category: "branding",
-      size: "col-span-12 md:col-span-6 row-span-1",
-      imageHeight: "h-80",
-    },
-    {
-      id: 6,
-      name: "Toyota",
-      video:
-        "https://videos.pexels.com/video-files/4419251/4419251-hd_1920_1080_25fps.mp4",
-      category: "uxui",
-      size: "col-span-12 md:col-span-6 row-span-1",
-      imageHeight: "h-80",
-    },
-    {
-      id: 7,
-      name: "Visa",
-      video:
-        "https://videos.pexels.com/video-files/3945147/3945147-uhd_2732_1440_25fps.mp4",
-      category: "strategy",
-      size: "col-span-12 md:col-span-3 row-span-1",
-      imageHeight: "h-44",
-    },
-    {
-      id: 8,
-      name: "Tesla",
-      video:
-        "https://videos.pexels.com/video-files/27421705/12140050_2730_1440_30fps.mp4",
-      category: "analytics",
-      size: "col-span-12 md:col-span-3 row-span-1",
-      imageHeight: "h-44",
-    },
-    {
-      id: 9,
-      name: "Nike",
-      video:
-        "https://videos.pexels.com/video-files/8533114/8533114-uhd_2560_1440_25fps.mp4",
-      category: "marketing",
-      size: "col-span-12 md:col-span-6 row-span-2",
-      imageHeight: "h-96",
-    },
-  ];
 
   const handleTabChange = (tab: TabId) => {
     setActiveTab(tab);

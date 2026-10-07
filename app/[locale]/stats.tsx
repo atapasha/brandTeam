@@ -1,8 +1,6 @@
 'use client'
 
-import React from "react";
-import { useState, useEffect } from "react";
-
+import React, { useState, useEffect, useRef } from "react";
 import { Separator } from "@/components/ui/separator";
 
 interface StatCardProps {
@@ -12,9 +10,11 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ number, label }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const cardRef = React.useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentCard = cardRef.current; // ذخیره ref در یک متغیر محلی
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -27,13 +27,13 @@ const StatCard: React.FC<StatCardProps> = ({ number, label }) => {
       }
     );
 
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
+    if (currentCard) {
+      observer.observe(currentCard);
     }
 
     return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
+      if (currentCard) {
+        observer.unobserve(currentCard); // استفاده از متغیر محلی در cleanup
       }
     };
   }, []);
@@ -79,17 +79,10 @@ const Stats: React.FC = () => {
   ];
 
   return (
-    <div
-      className="mx-auto   
-     2xl:w-4/5 md:px-16
-
-    
-    
-    px-6 "
-    >
+    <div className="mx-auto 2xl:w-4/5 md:px-16 px-6">
       <Separator className="my-16" />
 
-      <div className="flex flex-col md:flex-row items-start justify-between ">
+      <div className="flex flex-col md:flex-row items-start justify-between">
         <div className="md:w-1/4 mb-8 md:mb-0">
           <h2 className="text-4xl font-bold">our numbers:</h2>
           <p className="text-gray-500 mt-4">

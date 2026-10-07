@@ -100,5 +100,96 @@
         ]
       }
     }
+  },
+  
+  "ProjectsPage": {
+    "tabs": {
+      "projects": "Projects",
+      "clients": "Clients"
+    },
+    "categories": {
+      "all": "All",
+      "branding": "Branding",
+      "uxui": "UX/UI",
+      "development": "Development",
+      "strategy": "Strategy",
+      "marketing": "Marketing",
+      "research": "Research",
+      "analytics": "Analytics"
+    },
+    "clients": {
+      "1": {
+        "description": "Redbull is a global leader in the energy drink industry, with a focus on extreme sports and entertainment."
+      },
+      "2": {
+        "description": "Salesforce is a leading customer relationship management platform, with a focus on cloud-based solutions."
+      },
+      "3": {
+        "description": "Microsoft is a global leader in software and technology, with a focus on innovation and accessibility."
+      },
+      "4": {
+        "description": "Spotify is a leading music streaming service, with a focus on user experience and data analytics."
+      },
+      "5": {
+        "description": "Lyft is a leading ride-sharing service, with a focus on user experience and accessibility."
+      },
+      "6": {
+        "description": "Coca-Cola is a global leader in the beverage industry, with a focus on sustainability."
+      },
+      "7": {
+        "description": "Under Armour is a leading sports apparel brand, with a focus on innovation and performance."
+      },
+      "8": {
+        "description": "Slack is a leading team collaboration platform, with a focus on user experience and accessibility."
+      },
+      "9": {
+        "description": "LinkedIn is a leading professional networking platform, with a focus on user experience."
+      },
+      "10": {
+        "description": "Partnered with Audi to develop a research framework for their autonomous driving initiative."
+      },
+      "11": {
+        "description": "Sony is a great client of ours. We have worked with them on a number of key digital projects."
+      }
+    },
+    "projects": {
+      "1": {
+        "title": "Innovating the future of entertainment",
+        "description": "Partnered with sony to introduce a new line of cameras, focusing on user experience and accessibility."
+      },
+      "2": {
+        "title": "Innovation meets sustainability",
+        "description": "Until now, Qwant has been the search engine that knows nothing about you—and that hasn't changed."
+      },
+      "3": {
+        "title": "Craftsmanship in every cup",
+        "description": "Primary designs innovative, patient-centered medical offices. We crafted a brand for them that is as warm as it is modern."
+      },
+      "4": {
+        "title": "Music streaming reimagined",
+        "description": "Spotify is a leading music streaming service, with a focus on user experience and data analytics."
+      },
+      "5": {
+        "title": "All-in-one ecommerce platform",
+        "description": "Ecomworld is an all in one platform for ecommerce businesses to set up their own storefronts."
+      },
+      "6": {
+        "title": "Driving innovation forward",
+        "description": "Toyota is a global leader in the automotive industry, with a focus on innovation and sustainability."
+      },
+      "7": {
+        "title": "Digital wallet experience",
+        "description": "Partnered with Visa to design a new digital wallet experience, focusing on user-centered design."
+      },
+      "8": {
+        "title": "Automating the future",
+        "description": "Collaborated on enhancing Tesla's data analytics dashboard, providing deeper insights."
+      },
+      "9": {
+        "title": "Steps Towards Sustainability",
+        "description": "Developing a marketing campaign that brings Nike's commitment to sustainability to the forefront."
+      }
+    }
   }
+
 }

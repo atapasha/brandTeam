@@ -1,8 +1,11 @@
 import Navbar from "../navbar";
 import Culture from "./culture";
 import Team from "./team";
+import { useTranslations } from "next-intl";
 
 const About = () => {
+  const t = useTranslations("AboutPage");
+
   return (
     <div>
       <Navbar />
@@ -11,13 +14,12 @@ const About = () => {
         <div className="mx-auto flex items-center">
           <div className="max-w-3xl">
             <h1 className="text-4xl xl:text-6xl 2xl:text-7xl font-bold mb-8">
-              Not just a team,
+              {t("hero.titleLine1")}
               <br />
-              but a family.
+              {t("hero.titleLine2")}
             </h1>
             <p className="text-xl text-[#7b7b7b]">
-              We are a family of passionate creators who love to build amazing
-              products
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>

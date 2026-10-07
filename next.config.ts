@@ -1,13 +1,8 @@
-/** @type {import('next').NextJSConfig} */
-const nextConfig = {
-  eslint: {
-    // نادیده گرفتن خطاهای ESLint هنگام Build
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    // نادیده گرفتن خطاهای TypeScript هنگام Build
-    ignoreBuildErrors: true,
-  },
-};
+import createNextIntlPlugin from 'next-intl/plugin';
 
-module.exports = nextConfig;
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default withNextIntl(nextConfig);

@@ -1,0 +1,104 @@
+{
+  "Hero": {
+    "headingLine1": "Empowering businesses",
+    "headingLine2": "with Artificial Intelligence",
+    "descriptionLine1": "At Awesome Studio designs come",
+    "descriptionLine2": "to life with our great team",
+    "viewWork": "View Our Work",
+    "bookMeeting": "Book a meeting"
+  },
+  "Navbar": {
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "hero": {
+      "titleLine1": "Not just a team,",
+      "titleLine2": "but a family.",
+      "subtitle": "We are a family of passionate creators who love to build amazing products"
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "title": "A full service digital innovation partner",
+      "subtitle": "Our rich design and technology expertise delivers top brands and digital experiences"
+    },
+    "sectionTitle": "/ Our Services",
+    "items": {
+      "ai": {
+        "title": "AI Solutions",
+        "description": "Our AI solutions help businesses automate processes, gain insights, and create personalized experiences. We specialize in developing custom AI models and integrating them into existing systems to help you achieve your business goals.",
+        "benefits": [
+          "AI Strategy",
+          "Machine Learning",
+          "Natural Language Processing",
+          "Computer Vision",
+          "Predictive Analytics",
+          "AI Integration"
+        ]
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "At the core of our approach, we maintain that brand and UX are closely connected and work together. Our team specializes in creating and representing digital brand identities across channels, providing strategy assistance and guidelines to ensure consistency.",
+        "benefits": [
+          "Brand Strategy",
+          "Brand Architecture",
+          "Verbal Identity",
+          "Visual Identity",
+          "Brand Guidelines",
+          "Brand Experiences"
+        ]
+      },
+      "digitalProducts": {
+        "title": "Digital Products",
+        "description": "We create memorable enterprise and consumer products that drive real business value while delivering exceptional user experiences. Our comprehensive approach combines strategic thinking with cutting-edge design and technology to build products that users love.",
+        "benefits": [
+          "Product Strategy",
+          "UX/UI Design",
+          "Design Systems",
+          "Mobile Applications",
+          "Web Applications",
+          "Product Analytics"
+        ]
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Our portfolio features award-winning websites designed to give users the best experience possible while meeting crucial business objectives. We combine stunning visual design with optimized performance and accessibility to create digital experiences that leave a lasting impression.",
+        "benefits": [
+          "Website Design",
+          "Content Strategy",
+          "Performance Optimization",
+          "SEO Integration",
+          "Analytics Setup",
+          "Maintenance Services"
+        ]
+      },
+      "content": {
+        "title": "Content",
+        "description": "We work with brands to identify their unique content needs and deliver custom-made assets at the highest quality. Our content strategy encompasses everything from initial concept development to final production, ensuring that every piece of content aligns with your brand's voice and business objectives.",
+        "benefits": [
+          "Content Strategy",
+          "Copywriting",
+          "Video Production",
+          "Photography",
+          "Animation",
+          "Social Media Content"
+        ]
+      },
+      "development": {
+        "title": "Development",
+        "description": "Our designers and developers collaborate closely to create websites and products that provide exceptional user experiences and functionality. We specialize in building custom solutions that are tailored to your unique business needs, ensuring that your digital presence stands out from the competition.",
+        "benefits": [
+          "Frontend Development",
+          "Backend Development",
+          "Mobile Development",
+          "API Integration",
+          "Performance Optimization",
+          "Technical Consulting"
+        ]
+      }
+    }
+  }
+}

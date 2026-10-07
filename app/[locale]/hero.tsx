@@ -2,19 +2,19 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, easeOut } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/routing"; // استفاده از Link مربوط به next-intl
+import { useTranslations } from 'next-intl';
 
 const Hero = () => {
+  const t = useTranslations('Hero');
   const [hasAnimated, setHasAnimated] = useState(false);
   const { scrollY } = useScroll();
 
   useEffect(() => {
-    // Get navigation timing
     const navigation = performance.getEntriesByType(
       "navigation"
     )[0] as PerformanceNavigationTiming;
 
-    // Check if this is a fresh page load or reload
     if (navigation?.type === "reload" || navigation?.type === "navigate") {
       setHasAnimated(false);
     } else {
@@ -22,7 +22,6 @@ const Hero = () => {
     }
   }, []);
 
-  // Transform video size and width based on scroll with eased transitions
   const videoScale = useTransform(scrollY, [0, 500], [0.9, 1], {
     ease: easeOut,
   });
@@ -33,7 +32,6 @@ const Hero = () => {
     ease: easeOut,
   });
 
-  // Enhanced content animations
   const contentVariants = {
     hidden: {
       opacity: 0,
@@ -103,11 +101,11 @@ const Hero = () => {
             className="text-5xl md:text-6xl font-bold text-gray-900 mb-4"
           >
             <motion.span className="inline-block" variants={contentVariants}>
-              Empowering businesses
+              {t('headingLine1')}
             </motion.span>
             <br />
             <motion.span className="inline-block" variants={contentVariants}>
-              with Artificial Intelligence
+              {t('headingLine2')}
             </motion.span>
           </motion.h1>
 
@@ -115,10 +113,9 @@ const Hero = () => {
             variants={contentVariants}
             className="text-xl text-[#7b7b7b] mb-8"
           >
-            At Awesome Studio designs come
+            {t('descriptionLine1')}
             <br />
-            to life with our great team
-          
+            {t('descriptionLine2')}
           </motion.p>
 
           <motion.div
@@ -128,22 +125,19 @@ const Hero = () => {
             className="flex gap-x-3 md:gap-x-6 justify-center mb-10"
           >
             <Link
-              href={"/projects"}
-              className="bg-black text-white 
-              px-6 md:px-8 py-3 rounded-full text-lg font-medium transition-all hover:shadow-lg"
+              href="/projects"
+              className="bg-black text-white px-6 md:px-8 py-3 rounded-full text-lg font-medium transition-all hover:shadow-lg"
             >
-             View Our Work
+              {t('viewWork')}
             </Link>
 
             <motion.a
               href="https://meetings.hubspot.com/productizedos/epic-labs?uuid=fca92f30-4111-4445-9498-af335bb840af"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-500 text-white
-               px-6 md:px-8 py-3 rounded-full text-lg
-                font-medium hover:bg-red-600 transition-all hover:shadow-lg inline-block"
+              className="bg-red-500 text-white px-6 md:px-8 py-3 rounded-full text-lg font-medium hover:bg-red-600 transition-all hover:shadow-lg inline-block"
             >
-              Book a meeting
+              {t('bookMeeting')}
             </motion.a>
           </motion.div>
         </div>
@@ -168,7 +162,6 @@ const Hero = () => {
           <video
             src="/hero-video.mp4"
             autoPlay
-
             muted
             loop
             className="w-full h-full object-cover pointer-events-none"

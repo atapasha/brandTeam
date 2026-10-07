@@ -191,37 +191,33 @@
     }
   },
   
+  
   "ContactPage": {
-    "badge": "ارتباط با ما",
-    "title": "بیایید با هم چیز فوق‌العاده‌ای بسازیم",
-    "subtitle": "ایده‌ای در سر دارید، نیازمند مشاوره هستید یا می‌خواهید درباره پروژه بعدی خود گفتگو کنید؟ ما مشتاقانه منتظر شنیدن صدای شما هستیم.",
+    "badge": "تماس با ما",
+    "title": "ارتباط با ما",
+    "subtitle": "خوشحال می‌شویم از شما بشنویم.",
     "info": {
       "title": "اطلاعات تماس",
-      "subtitle": "از طریق فرم پیام بفرستید یا مستقیم از راه‌های زیر با ما در ارتباط باشید.",
-      "emailLabel": "ایمیل پشتیبانی",
-      "emailValue": "contact@awesome.ir",
-      "phoneLabel": "شماره تماس",
-      "phoneValue": "+98 (71) 3000 0000",
-      "mobileValue": "+98 917 000 0000",
-      "locationLabel": "دفتر مرکزی",
-      "address": "ایران، شیراز، خیابان ارم، ساختمان استودیو آوسام",
-      "socialsTitle": "شبکه‌های اجتماعی"
+      "subtitle": "جهت دریافت مشاوره یا همکاری با ما در ارتباط باشید.",
+      "email": "ایمیل",
+      "phone": "تلفن تماس",
+      "location": "موقعیت مکانی",
+      "address": "شیراز، ایران"
     },
     "form": {
-      "title": "ارسال پیام مستقیم",
-      "subtitle": "فرم زیر را پر کنید؛ معمولاً ظرف کمتر از ۲۴ ساعت پاسخ می‌دهیم.",
       "nameLabel": "نام و نام خانوادگی",
-      "namePlaceholder": "مثلاً علی محمدی",
-      "emailLabel": "آدرس ایمیل",
-      "emailPlaceholder": "example@gmail.com",
-      "subjectLabel": "موضوع پروژه / درخواست",
-      "subjectPlaceholder": "مثلاً طراحی وب‌سایت / مشاوره هوش مصنوعی",
+      "namePlaceholder": "علی محمدی",
+      "emailLabel": "ایمیل",
+      "emailPlaceholder": "example@domain.com",
+      "subjectLabel": "موضوع",
+      "subjectPlaceholder": "موضوع پیام خود را وارد کنید",
       "messageLabel": "متن پیام",
-      "messagePlaceholder": "درباره اهداف، زمان‌بندی و جزئیات پروژه بنویسید...",
+      "messagePlaceholder": "پیام خود را بنویسید...",
       "submitButton": "ارسال پیام",
       "submitting": "در حال ارسال...",
       "successAlert": "پیام شما با موفقیت ارسال شد!"
     }
-  }
+  
+}
 
 }

@@ -8,12 +8,7 @@ import Industries from "./industries";
 import Footer from "../footer";
 import { useTranslations } from "next-intl";
 
-interface ServiceItem {
-  title: string;
-  description: string;
-  benefits: string[];
-  image: string;
-}
+ 
 
 const Services = () => {
   const t = useTranslations("ServicesPage");

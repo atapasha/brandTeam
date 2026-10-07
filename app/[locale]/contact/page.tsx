@@ -19,11 +19,10 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // شبیه‌سازی ارسال فرم
+
     setTimeout(() => {
       setIsSubmitting(false);
-      alert("پیام شما با موفقیت ثبت شد!");
+      alert(t("form.successAlert"));
       setFormData({ name: "", email: "", subject: "", message: "" });
     }, 1500);
   };
@@ -80,7 +79,9 @@ const Contact = () => {
             {/* Glow effect */}
             <div className="absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-blue-600/20 blur-3xl pointer-events-none" />
 
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">{t("info.title")}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              {t("info.title")}
+            </h2>
             <p className="text-neutral-400 mb-10 text-sm md:text-base leading-relaxed">
               {t("info.subtitle")}
             </p>

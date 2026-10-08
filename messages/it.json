@@ -1,0 +1,194 @@
+{
+  "Hero": {
+    "headingLine1": "Potenziare le aziende",
+    "headingLine2": "con l'Intelligenza Artificiale",
+    "descriptionLine1": "In Awesome Studio, i progetti prendono vita",
+    "descriptionLine2": "grazie al nostro fantastico team",
+    "viewWork": "Vedi portfolio",
+    "bookMeeting": "Prenota un incontro"
+  },
+  "Navbar": {
+    "services": "Servizi",
+    "projects": "Progetti",
+    "about": "Chi siamo",
+    "contact": "Contatti"
+  },
+  "AboutPage": {
+    "hero": {
+      "titleLine1": "Non solo un team,",
+      "titleLine2": "ma una famiglia.",
+      "subtitle": "Siamo una famiglia di creatori appassionati che amano realizzare prodotti straordinari."
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "title": "Il tuo partner globale per l'innovazione digitale",
+      "subtitle": "La nostra ricca esperienza nel design e nella tecnologia crea brand leader ed esperienze digitali eccezionali."
+    },
+    "sectionTitle": "/ I nostri servizi",
+    "items": {
+      "ai": {
+        "title": "Soluzioni di IA",
+        "description": "Le nostre soluzioni di intelligenza artificiale aiutano le aziende ad automatizzare i processi, ottenere analisi preziose e creare esperienze personalizzate.",
+        "benefits": [
+          "Strategia di IA",
+          "Machine Learning",
+          "Elaborazione del linguaggio naturale",
+          "Computer Vision",
+          "Analisi predittiva",
+          "Integrazione dell'IA"
+        ]
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Al centro del nostro approccio, il brand e l'esperienza utente sono strettamente interconnessi.",
+        "benefits": [
+          "Strategia di brand",
+          "Architettura del brand",
+          "Identità verbale",
+          "Identità visiva",
+          "Linee guida del brand",
+          "Esperienze di brand"
+        ]
+      },
+      "digitalProducts": {
+        "title": "Prodotti Digitali",
+        "description": "Creiamo prodotti duraturi per aziende e consumatori che generano reale valore di business.",
+        "benefits": [
+          "Strategia di prodotto",
+          "Design UI/UX",
+          "Design Systems",
+          "Applicazioni mobili",
+          "Applicazioni Web",
+          "Analisi del prodotto"
+        ]
+      },
+      "websites": {
+        "title": "Siti Web",
+        "description": "Il nostro portfolio include siti web premiati progettati per offrire la migliore esperienza utente.",
+        "benefits": [
+          "Design di siti web",
+          "Strategia dei contenuti",
+          "Ottimizzazione delle prestazioni",
+          "SEO e posizionamento nei motori di ricerca",
+          "Configurazione strumenti di analisi",
+          "Manutenzione e supporto"
+        ]
+      },
+      "content": {
+        "title": "Creazione di Contenuti",
+        "description": "Collaboriamo con i brand per identificare le loro esigenze uniche di contenuto e fornire risultati di altissima qualità.",
+        "benefits": [
+          "Strategia dei contenuti",
+          "Copywriting",
+          "Produzione video",
+          "Fotografia esclusiva",
+          "Animazione e Motion Graphics",
+          "Contenuti per social media"
+        ]
+      },
+      "development": {
+        "title": "Sviluppo e Programmazione",
+        "description": "I nostri designer e sviluppatori lavorano a stretto contatto per creare prodotti con prestazioni eccezionali.",
+        "benefits": [
+          "Sviluppo Frontend",
+          "Sviluppo Backend",
+          "Sviluppo di app mobili",
+          "Integrazione API",
+          "Ottimizzazione della velocità",
+          "Consulenza tecnica"
+        ]
+      }
+    }
+  },
+  "ProjectsPage": {
+    "tabs": {
+      "projects": "Progetti",
+      "clients": "Clienti"
+    },
+    "categories": {
+      "all": "Tutti",
+      "branding": "Branding",
+      "uxui": "Design UI/UX",
+      "development": "Sviluppo",
+      "strategy": "Strategia",
+      "marketing": "Marketing",
+      "research": "Ricerca",
+      "analytics": "Analisi dei dati"
+    },
+    "clients": {
+      "1": { "description": "Red Bull è un pioniere globale nel settore degli energy drink." },
+      "2": { "description": "Salesforce è la piattaforma CRM leader focalizzata su soluzioni cloud." },
+      "3": { "description": "Microsoft è un leader globale nel settore software e tecnologia." },
+      "4": { "description": "Spotify è il servizio leader nel settore dello streaming musicale." },
+      "5": { "description": "Lyft è un primario servizio di ridesharing." },
+      "6": { "description": "Coca-Cola è un leader mondiale nel settore delle bevande focalizzato sulla sostenibilità." },
+      "7": { "description": "Under Armour è un brand leader nell'abbigliamento sportivo." },
+      "8": { "description": "Slack è la piattaforma leader per la collaborazione di team." },
+      "9": { "description": "LinkedIn è la piattaforma professionale leader nel networking." },
+      "10": { "description": "Collaborazione con Audi per sviluppare un framework di ricerca sulla guida autonoma." },
+      "11": { "description": "Sony è uno dei nostri clienti di rilievo per diversi progetti digitali." }
+    },
+    "projects": {
+      "1": {
+        "title": "Innovare il futuro dell'intrattenimento",
+        "description": "Collaborazione con Sony per lanciare una nuova linea di fotocamere."
+      },
+      "2": {
+        "title": "Unire innovazione e sostenibilità",
+        "description": "Il motore di ricerca Qwant opera senza salvare i dati personali degli utenti."
+      },
+      "3": {
+        "title": "Eleganza e arte in ogni tazza",
+        "description": "Design di studi medici moderni incentrati sul paziente."
+      },
+      "4": {
+        "title": "Ridefinire lo streaming musicale",
+        "description": "Spotify è il servizio leader focalizzato sull'esperienza utente."
+      },
+      "5": { "title": "Piattaforma E-Commerce All-in-One", "description": "EcomWorld è una piattaforma completa per il business online." },
+      "6": {
+        "title": "Innovazione nella mobilità",
+        "description": "Toyota è un leader globale nell'industria automobilistica."
+      },
+      "7": {
+        "title": "Esperienza Wallet Digitale",
+        "description": "Collaborazione con Visa per progettare una nuova esperienza di wallet digitale."
+      },
+      "8": {
+        "title": "Il futuro dell'automazione",
+        "description": "Collaborazione per il miglioramento della dashboard di analisi Tesla."
+      },
+      "9": {
+        "title": "Passi verso la sostenibilità",
+        "description": "Sviluppo di una campagna di marketing che mostra l'impegno ambientale di Nike."
+      }
+    }
+  },
+  "ContactPage": {
+    "badge": "Contattaci",
+    "title": "Mettiti in contatto",
+    "subtitle": "Saremo felici di rispondere alle tue domande.",
+    "info": {
+      "title": "Informazioni di contatto",
+      "subtitle": "Contattaci per consulenze o collaborazioni.",
+      "email": "E-mail",
+      "phone": "Telefono",
+      "location": "Posizione",
+      "address": "Shiraz, Iran"
+    },
+    "form": {
+      "nameLabel": "Nome e cognome",
+      "namePlaceholder": "Mario Rossi",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "esempio@dominio.com",
+      "subjectLabel": "Oggetto",
+      "subjectPlaceholder": "Inserisci l'oggetto del messaggio",
+      "messageLabel": "Messaggio",
+      "messagePlaceholder": "Scrivi il tuo messaggio...",
+      "submitButton": "Invia messaggio",
+      "submitting": "Invio in corso...",
+      "successAlert": "Il tuo messaggio è stato inviato con successo!"
+    }
+  }
+}

@@ -30,13 +30,13 @@ export default async function RootLayout({
   // ۳. دریافت پیام‌های ترجمه مربوط به locale فعلی
   const messages = await getMessages();
 
-  // ۴. تعیین جهت صفحه و فونت مناسب
+  // ۴. تعیین جهت صفحه
   const isFa = locale === "fa";
   const dir = isFa ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir}>
-      <body>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

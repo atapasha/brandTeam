@@ -1,8 +1,8 @@
 "use client";
 
-import { Menu, X, Globe } from "lucide-react";
-import { Link, usePathname, useRouter } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
+import { Menu, X } from "lucide-react";
+import { Link, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import {
   AnimatePresence,
@@ -10,12 +10,11 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const t = useTranslations("Navbar");
-  const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isHomePage = pathname === "/";
@@ -30,12 +29,6 @@ const Navbar = () => {
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
   ];
-
-  // تابع تغییر زبان با حفظ مسیر فعلی
-  const toggleLanguage = () => {
-    const nextLocale = locale === "fa" ? "en" : "fa";
-    router.replace(pathname, { locale: nextLocale });
-  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (!mobileMenuOpen) {
@@ -53,26 +46,12 @@ const Navbar = () => {
   });
 
   const menuVariants = {
-    open: {
-      opacity: 1,
-      height: "auto",
-    },
-    closed: {
-      opacity: 0,
-      height: 0,
-    },
+    open: { opacity: 1, height: "auto" },
+    closed: { opacity: 0, height: 0 },
   };
 
   const navbarVariants = {
-    initial: isHomePage
-      ? {
-          y: -100,
-          opacity: 0,
-        }
-      : {
-          y: 0,
-          opacity: 1,
-        },
+    initial: isHomePage ? { y: -100, opacity: 0 } : { y: 0, opacity: 1 },
     visible: {
       y: 0,
       opacity: 1,
@@ -85,10 +64,7 @@ const Navbar = () => {
     hidden: {
       y: -100,
       opacity: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
+      transition: { duration: 0.3, ease: "easeInOut" },
     },
   };
 
@@ -96,18 +72,18 @@ const Navbar = () => {
     <AnimatePresence>
       <motion.nav
         key="navbar"
-        className="fixed top-0 left-0 right-0 bg-white z-50 py-4 px-6 md:px-10 border-b"
+        className="fixed top-0 left-0 right-0 bg-transparent z-50 py-4 px-6 md:px-10 "
         initial="initial"
         animate={isVisible ? "visible" : "hidden"}
         variants={navbarVariants}
       >
         <div className="mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
-            <div className="rounded-full bg-black w-6 h-6" />
-            <span className="text-xl font-bold">Awesome Studio</span>
+            <div className="rounded-full bg-white w-6 h-6" />
+            <span className="text-xl font-bold text-white">Awesome Studio</span>
           </Link>
 
-          {/* desktop menu */}
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
             {links.map((link) => (
               <Link
@@ -121,29 +97,16 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Language Switcher Button (Desktop) */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-200 text-sm font-medium hover:bg-neutral-100 transition-colors"
-            >
-              <Globe className="w-4 h-4 text-neutral-600" />
-              <span>{locale === "fa" ? "English" : "فارسی"}</span>
-            </button>
+            {/* Language Switcher Desktop */}
+            <LanguageSwitcher />
           </div>
 
-          {/* mobile buttons */}
+          {/* Mobile Buttons */}
           <div className="flex items-center gap-3 md:hidden">
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-full border border-neutral-200 text-xs font-medium"
-            >
-              <Globe className="w-3.5 h-3.5 text-neutral-600" />
-              <span>{locale === "fa" ? "EN" : "FA"}</span>
-            </button>
+            {/* Language Switcher Mobile */}
+            <LanguageSwitcher isMobile />
 
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? (
                 <X className="w-6 h-6 text-neutral-500" />
               ) : (
@@ -153,7 +116,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* mobile menu */}
+        {/* Mobile Menu */}
         <motion.div
           initial="closed"
           animate={mobileMenuOpen ? "open" : "closed"}
@@ -177,7 +140,7 @@ const Navbar = () => {
         </motion.div>
       </motion.nav>
 
-      {/* overlay for mobile menu */}
+      {/* Overlay for Mobile Menu */}
       {mobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0 }}

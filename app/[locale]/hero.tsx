@@ -1,12 +1,13 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, easeOut } from "framer-motion";
-import { Link } from "@/i18n/routing"; // استفاده از Link مربوط به next-intl
-import { useTranslations } from 'next-intl';
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import Galaxy from "./Galaxy";
 
 const Hero = () => {
-  const t = useTranslations('Hero');
+  const t = useTranslations("Hero");
   const [hasAnimated, setHasAnimated] = useState(false);
   const { scrollY } = useScroll();
 
@@ -87,65 +88,82 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      {/* Main Content Section */}
-      <motion.div
-        className="w-full flex justify-center items-center md:px-0 pt-32 md:pt-40 bg-white"
-        initial={hasAnimated ? "visible" : "hidden"}
-        animate="visible"
-        variants={contentVariants}
-      >
-        <div className="md:max-w-3xl text-center px-4">
-          <motion.h1
-            variants={contentVariants}
-            className="text-5xl md:text-6xl font-bold text-gray-900 mb-4"
-          >
-            <motion.span className="inline-block" variants={contentVariants}>
-              {t('headingLine1')}
-            </motion.span>
-            <br />
-            <motion.span className="inline-block" variants={contentVariants}>
-              {t('headingLine2')}
-            </motion.span>
-          </motion.h1>
-
-          <motion.p
-            variants={contentVariants}
-            className="text-xl text-[#7b7b7b] mb-8"
-          >
-            {t('descriptionLine1')}
-            <br />
-            {t('descriptionLine2')}
-          </motion.p>
-
-          <motion.div
-            variants={buttonVariants}
-            initial={hasAnimated ? "visible" : "hidden"}
-            animate="visible"
-            className="flex gap-x-3 md:gap-x-6 justify-center mb-10"
-          >
-            <Link
-              href="/projects"
-              className="bg-black text-white px-6 md:px-8 py-3 rounded-full text-lg font-medium transition-all hover:shadow-lg"
-            >
-              {t('viewWork')}
-            </Link>
-
-            <motion.a
-              href="https://meetings.hubspot.com/productizedos/epic-labs?uuid=fca92f30-4111-4445-9498-af335bb840af"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-red-500 text-white px-6 md:px-8 py-3 rounded-full text-lg font-medium hover:bg-red-600 transition-all hover:shadow-lg inline-block"
-            >
-              {t('bookMeeting')}
-            </motion.a>
-          </motion.div>
+    <div className="flex flex-col items-center bg-black min-h-screen">
+      {/* Galaxy Background & Hero Content Container (Full Screen) */}
+      <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
+        {/* Galaxy Component as Background */}
+        <div className="absolute inset-0 z-0">
+          <Galaxy
+            mouseRepulsion
+            mouseInteraction
+            density={1}
+            glowIntensity={0.3}
+            saturation={0}
+            hueShift={140}
+            twinkleIntensity={0.3}
+            rotationSpeed={0.1}
+            repulsionStrength={2}
+            autoCenterRepulsion={0}
+            starSpeed={0.5}
+            speed={1}
+          />
         </div>
-      </motion.div>
+
+        {/* Main Content Overlay */}
+        <motion.div
+          className="relative z-10 w-full flex flex-col justify-center items-center px-4 pointer-events-none"
+          initial={hasAnimated ? "visible" : "hidden"}
+          animate="visible"
+          variants={contentVariants}
+        >
+          <div className="md:max-w-3xl text-center pointer-events-auto">
+            <motion.h1
+              variants={contentVariants}
+              className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            >
+              <motion.span className="inline-block" variants={contentVariants}>
+                {t("headingLine1")}
+              </motion.span>
+              <br />
+              <motion.span className="inline-block" variants={contentVariants}>
+                {t("headingLine2")}
+              </motion.span>
+            </motion.h1>
+
+            <motion.p
+              variants={contentVariants}
+              className="text-lg md:text-xl text-neutral-300 mb-8"
+            >
+              {t("descriptionLine1")}
+              <br />
+              {t("descriptionLine2")}
+            </motion.p>
+
+            {/* Action Buttons inside Galaxy */}
+            <motion.div
+              variants={buttonVariants}
+              className="flex flex-wrap items-center justify-center gap-4 pointer-events-auto"
+            >
+              <Link
+                href="/projects"
+                className="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-colors shadow-lg"
+              >
+                {t("viewWork")}
+              </Link>
+              <Link
+                href="/contact"
+                className="px-6 py-3 rounded-full border border-white/30 text-white font-semibold text-sm hover:bg-white/10 backdrop-blur-sm transition-colors"
+              >
+                {t("bookMeeting")}
+              </Link>
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
 
       {/* Video Section */}
       <motion.div
-        className="flex justify-center w-full md:px-0"
+        className="flex justify-center w-full md:px-0 z-10 -mt-16 md:-mt-24 pb-16"
         initial={hasAnimated ? "visible" : "hidden"}
         animate="visible"
         variants={videoContainerVariants}
@@ -157,13 +175,14 @@ const Hero = () => {
             borderRadius: videoBorderRadius,
             overflow: "hidden",
           }}
-          className="relative w-full md:w-auto"
+          className="relative w-full md:w-auto shadow-2xl"
         >
           <video
             src="/hero-video.mp4"
             autoPlay
             muted
             loop
+            playsInline
             className="w-full h-full object-cover pointer-events-none"
           />
         </motion.div>

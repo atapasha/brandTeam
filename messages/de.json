@@ -1,0 +1,197 @@
+{
+  "Hero": {
+    "headingLine1": "Unternehmen stärken",
+    "headingLine2": "mit KI",
+    "descriptionLine1": "Im Awesome Studio werden Designs",
+    "descriptionLine2": "von unserem großartigen Team zum Leben erweckt",
+    "viewWork": "Portfolio anzeigen",
+    "bookMeeting": "Termin buchen"
+  },
+  "Navbar": {
+    "services": "Dienstleistungen",
+    "projects": "Projekte",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "AboutPage": {
+    "hero": {
+      "titleLine1": "Nicht nur ein Team,",
+      "titleLine2": "sondern eine Familie.",
+      "subtitle": "Wir sind eine Familie leidenschaftlicher Schöpfer, die es lieben, erstaunliche Produkte zu entwickeln."
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "title": "Ihr umfassender Partner für digitale Innovationen",
+      "title_subtitle": "Unsere reiche Erfahrung in Design und Technologie schafft Top-Marken und außergewöhnliche digitale Erlebnisse"
+    },
+    "sectionTitle": "/ Unsere Dienstleistungen",
+    "items": {
+      "ai": {
+        "title": "KI-Lösungen",
+        "description": "Unsere KI-Lösungen helfen Unternehmen, Prozesse zu automatisieren, wertvolle Erkenntnisse zu gewinnen und personalisierte Erlebnisse zu schaffen. Wir sind spezialisiert auf die Entwicklung maßgeschneiderter KI-Modelle und deren Integration in bestehende Systeme.",
+        "benefits": [
+          "KI-Strategie",
+          "Maschinelles Lernen",
+          "Verarbeitung natürlicher Sprache",
+          "Computer Vision",
+          "Prädiktive Analytik",
+          "KI-Integration"
+        ]
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Im Mittelpunkt unseres Ansatzes sind Marke und Nutzererfahrung eng miteinander verbunden. Unser Team ist spezialisiert auf die Erstellung und Repräsentation digitaler Markenidentitäten über alle Kanäle hinweg.",
+        "benefits": [
+          "Markenstrategie",
+          "Markenarchitektur",
+          "Verbale Identität",
+          "Visuelle Identität",
+          "Umfassender Markenleitfaden",
+          "Markenerlebnisse"
+        ]
+      },
+      "digitalProducts": {
+        "title": "Digitale Produkte",
+        "description": "Wir entwickeln nachhaltige Unternehmens- und Verbraucherprodukte, die echten Geschäftswert schaffen und eine außergewöhnliche Benutzererfahrung bieten.",
+        "benefits": [
+          "Produktstrategie",
+          "UI/UX-Design",
+          "Design-Systeme",
+          "Mobile Anwendungen",
+          "Web-Anwendungen",
+          "Produktanalyse"
+        ]
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Unser Portfolio umfasst preisgekrönte Websites, die entwickelt wurden, um das beste Nutzererlebnis zu bieten und wichtige Geschäftsziele zu erreichen.",
+        "benefits": [
+          "Website-Design",
+          "Content-Strategie",
+          "Leistungsoptimierung",
+          "SEO & Suchmaschinenoptimierung",
+          "Einrichtung von Analysetools",
+          "Wartung & Support"
+        ]
+      },
+      "content": {
+        "title": "Content-Erstellung",
+        "description": "Wir arbeiten mit Marken zusammen, um deren einzigartigen Content-Bedarf zu ermitteln und maßgeschneiderte Ergebnisse von höchster Qualität zu liefern.",
+        "benefits": [
+          "Content-Strategie",
+          "Copywriting",
+          "Videoproduktion",
+          "Exklusive Fotografie",
+          "Animation & Motion Graphics",
+          "Social Media Content"
+        ]
+      },
+      "development": {
+        "title": "Entwicklung & Programmierung",
+        "description": "Unsere Designer und Entwickler arbeiten eng zusammen, um Websites und Produkte zu schaffen, die eine hervorragende Leistung und Benutzererfahrung bieten.",
+        "benefits": [
+          "Frontend-Entwicklung",
+          "Backend-Entwicklung",
+          "Mobile-App-Entwicklung",
+          "API-Integration",
+          "Geschwindigkeitsoptimierung",
+          "Technische Beratung"
+        ]
+      }
+    }
+  },
+  "ProjectsPage": {
+    "tabs": {
+      "projects": "Projekte",
+      "clients": "Kunden"
+    },
+    "categories": {
+      "all": "Alle",
+      "branding": "Branding",
+      "uxui": "UI/UX Design",
+      "development": "Entwicklung",
+      "strategy": "Strategie",
+      "marketing": "Marketing",
+      "research": "Forschung",
+      "analytics": "Datenanalyse"
+    },
+    "clients": {
+      "1": { "description": "Red Bull ist ein globaler Pionier in der Energiegetränkebranche mit Fokus auf Action-Sport und Unterhaltung." },
+      "2": { "description": "Salesforce ist die führende CRM-Plattform mit Schwerpunkt auf cloudbasierten Lösungen." },
+      "3": { "description": "Microsoft ist ein weltweit führendes Unternehmen für Software und Technologie." },
+      "4": { "description": "Spotify ist der führende Musik-Streaming-Dienst." },
+      "5": { "description": "Lyft ist ein führender Ridesharing-Dienst." },
+      "6": { "description": "Coca-Cola ist ein weltweit führendes Getränkeunternehmen mit Fokus auf Nachhaltigkeit." },
+      "7": { "description": "Under Armour ist eine führende Sportbekleidungsmarke." },
+      "8": { "description": "Slack ist eine führende Team-Kollaborationsplattform." },
+      "9": { "description": "LinkedIn ist die führende Plattform für professionelles Networking." },
+      "10": { "description": "Zusammenarbeit mit Audi zur Entwicklung eines Forschungsrahmens für autonomes Fahren." },
+      "11": { "description": "Sony ist einer unserer namhaften Kunden für verschiedene digitale Schlüsselprojekte." }
+    },
+    "projects": {
+      "1": {
+        "title": "Innovationen in der Zukunft der Unterhaltung",
+        "description": "Zusammenarbeit mit Sony zur Einführung einer neuen Kameralinie mit Fokus auf Benutzerfreundlichkeit."
+      },
+      "2": {
+        "title": "Verbindung von Innovation und Nachhaltigkeit",
+        "description": "Die Suchmaschine Qwant arbeitet seit jeher ohne Speicherung persönlicher Daten."
+      },
+      "3": {
+        "title": "Eleganz und Kunst in jeder Tasse",
+        "description": "Design moderner und patientenorientierter Arztpraxen."
+      },
+      "4": {
+        "title": "Musik-Streaming neu definiert",
+        "description": "Spotify ist der führende Musik-Streaming-Dienst mit Fokus auf Benutzererfahrung."
+      },
+      "5": {
+        "title": "All-in-One E-Commerce-Plattform",
+        "description": "EcomWorld ist eine umfassende Plattform für Online-Geschäfte."
+      },
+      "6": {
+        "title": "Förderung von Innovation in der Mobilität",
+        "description": "Toyota ist ein weltweit führendes Automobilunternehmen."
+      },
+      "7": {
+        "title": "Digital Wallet Erlebnis",
+        "description": "Zusammenarbeit mit Visa zur Neugestaltung der Digital Wallet Experience."
+      },
+      "8": {
+        "title": "Zukunft der Automatisierung",
+        "description": "Zusammenarbeit zur Verbesserung des Tesla-Datenanalysedashboards."
+      },
+      "9": {
+        "title": "Schritte zur Nachhaltigkeit",
+        "description": "Entwicklung einer Marketingkampagne, die das Engagement von Nike für die Umwelt zeigt."
+      }
+    }
+  },
+  "ContactPage": {
+    "badge": "Kontaktieren Sie uns",
+    "title": "In Kontakt treten",
+    "subtitle": "Wir würden uns freuen, von Ihnen zu hören.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "subtitle": "Kontaktieren Sie uns für Beratung oder Zusammenarbeit.",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "location": "Standort",
+      "address": "Schiras, Iran"
+    },
+    "form": {
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Max Mustermann",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "beispiel@domain.com",
+      "subjectLabel": "Betreff",
+      "subjectPlaceholder": "Geben Sie den Betreff Ihrer Nachricht ein",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Schreiben Sie Ihre Nachricht...",
+      "submitButton": "Nachricht senden",
+      "submitting": "Wird gesendet...",
+      "successAlert": "Ihre Nachricht wurde erfolgreich gesendet!"
+    }
+  }
+}

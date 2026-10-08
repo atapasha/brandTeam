@@ -1,0 +1,197 @@
+{
+  "Hero": {
+    "headingLine1": "Propulser les entreprises",
+    "headingLine2": "grâce à l'IA",
+    "descriptionLine1": "Chez Awesome Studio, les designs prennent vie",
+    "descriptionLine2": "grâce à notre équipe exceptionnelle",
+    "viewWork": "Voir le portfolio",
+    "bookMeeting": "Réserver un rendez-vous"
+  },
+  "Navbar": {
+    "services": "Services",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "hero": {
+      "titleLine1": "Pas seulement une équipe,",
+      "titleLine2": "mais une famille.",
+      "subtitle": "Nous sommes une famille de créateurs passionnés qui aiment concevoir des produits extraordinaires."
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "title": "Votre partenaire global d'innovation numérique",
+      "subtitle": "Notre riche expérience en design et technologie crée des marques de premier plan et des expériences numériques exceptionnelles."
+    },
+    "sectionTitle": "/ Nos services",
+    "items": {
+      "ai": {
+        "title": "Solutions d'IA",
+        "description": "Nos solutions d'IA aident les entreprises à automatiser les processus, obtenir des données précieuses et créer des expériences personnalisées.",
+        "benefits": [
+          "Stratégie IA",
+          "Apprentissage automatique",
+          "Traitement du langage naturel",
+          "Vision par ordinateur",
+          "Analyse prédictive",
+          "Intégration d'IA"
+        ]
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Au cœur de notre approche, la marque et l'expérience utilisateur sont étroitement liées.",
+        "benefits": [
+          "Stratégie de marque",
+          "Architecture de marque",
+          "Identité verbale",
+          "Identité visuelle",
+          "Charte graphique complète",
+          "Expériences de marque"
+        ]
+      },
+      "digitalProducts": {
+        "title": "Produits Numériques",
+        "description": "Nous créons des produits durables pour les entreprises et les consommateurs qui apportent une réelle valeur ajoutée.",
+        "benefits": [
+          "Stratégie produit",
+          "Design UI/UX",
+          "Design Systems",
+          "Applications mobiles",
+          "Applications Web",
+          "Analyse de produit"
+        ]
+      },
+      "websites": {
+        "title": "Sites Web",
+        "description": "Notre portfolio comprend des sites Web récompensés conçus pour offrir la meilleure expérience utilisateur.",
+        "benefits": [
+          "Design de sites Web",
+          "Stratégie de contenu",
+          "Optimisation des performances",
+          "Référencement SEO",
+          "Configuration des outils d'analyse",
+          "Maintenance et support"
+        ]
+      },
+      "content": {
+        "title": "Création de Contenu",
+        "description": "Nous collaborons avec les marques pour identifier leurs besoins uniques en contenu et fournir des résultats de haute qualité.",
+        "benefits": [
+          "Stratégie de contenu",
+          "Conception-rédaction (Copywriting)",
+          "Production vidéo",
+          "Photographie exclusive",
+          "Animation et Motion Graphics",
+          "Contenu pour réseaux sociaux"
+        ]
+      },
+      "development": {
+        "title": "Développement & Programmation",
+        "description": "Nos designers et développeurs travaillent en étroite collaboration pour créer des produits aux performances exceptionnelles.",
+        "benefits": [
+          "Développement Frontend",
+          "Développement Backend",
+          "Développement d'applications mobiles",
+          "Intégration d'API",
+          "Optimisation de la vitesse",
+          "Conseil technique"
+        ]
+      }
+    }
+  },
+  "ProjectsPage": {
+    "tabs": {
+      "projects": "Projets",
+      "clients": "Clients"
+    },
+    "categories": {
+      "all": "Tous",
+      "branding": "Branding",
+      "uxui": "Design UI/UX",
+      "development": "Développement",
+      "strategy": "Stratégie",
+      "marketing": "Marketing",
+      "research": "Recherche",
+      "analytics": "Analyse de données"
+    },
+    "clients": {
+      "1": { "description": "Red Bull est un pionnier mondial de l'industrie des boissons énergisantes." },
+      "2": { "description": "Salesforce est la plateforme CRM leader axée sur les solutions cloud." },
+      "3": { "description": "Microsoft est un leader mondial des logiciels et de la technologie." },
+      "4": { "description": "Spotify est le service de streaming musical leader." },
+      "5": { "description": "Lyft est un service majeur de covoiturage urbain." },
+      "6": { "description": "Coca-Cola est un leader mondial des boissons axé sur le développement durable." },
+      "7": { "description": "Under Armour est une marque majeure de vêtements de sport." },
+      "8": { "description": "Slack est une plateforme leader de collaboration d'équipe." },
+      "9": { "description": "LinkedIn est la plateforme réseau professionnelle leader." },
+      "10": { "description": "Collaboration avec Audi pour développer un cadre de recherche sur la conduite autonome." },
+      "11": { "description": "Sony est l'un de nos clients majeurs pour divers projets numériques." }
+    },
+    "projects": {
+      "1": {
+        "title": "Innover l'avenir du divertissement",
+        "description": "Collaboration avec Sony pour le lancement d'une nouvelle gamme d'appareils photo."
+      },
+      "2": {
+        "title": "Allier innovation et durabilité",
+        "description": "Le moteur de recherche Qwant fonctionne sans conserver de données personnelles."
+      },
+      "3": {
+        "title": "Élégance et art dans chaque détail",
+        "description": "Design de cabinets médicaux modernes centrés sur le patient."
+      },
+      "4": {
+        "title": "Redéfinir le streaming musical",
+        "description": "Spotify est le service leader axé sur l'expérience utilisateur."
+      },
+      "5": {
+        "title": "Plateforme E-Commerce Tout-en-Un",
+        "description": "EcomWorld est une plateforme complète pour les entreprises en ligne."
+      },
+      "6": {
+        "title": "Faire progresser l'innovation dans la mobilité",
+        "description": "Toyota est un leader mondial de l'industrie automobile."
+      },
+      "7": {
+        "title": "Expérience Portefeuille Numérique",
+        "description": "Collaboration avec Visa pour concevoir une nouvelle expérience de portefeuille numérique."
+      },
+      "8": {
+        "title": "L'avenir de l'automatisation",
+        "description": "Collaboration pour l'amélioration du tableau de bord d'analyse de Tesla."
+      },
+      "9": {
+        "title": "Des actions en faveur du développement durable",
+        "description": "Développement d'une campagne marketing illustrant l'engagement environnemental de Nike."
+      }
+    }
+  },
+  "ContactPage": {
+    "badge": "Contactez-nous",
+    "title": "Entrer en contact",
+    "subtitle": "Nous serions ravis d'avoir de vos nouvelles.",
+    "info": {
+      "title": "Informations de contact",
+      "subtitle": "Contactez-nous pour des conseils или une collaboration.",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "address": "Shiraz, Iran"
+    },
+    "form": {
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Jean Dupont",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "exemple@domaine.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Entrez le sujet de votre message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Écrivez votre message...",
+      "submitButton": "Envoyer le message",
+      "submitting": "Envoi en cours...",
+      "successAlert": "Votre message a été envoyé avec succès !"
+    }
+  }
+}

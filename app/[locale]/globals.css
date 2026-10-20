@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* بهینه‌سازی‌های گلوبال برای اسکرول و رندر نرم */
+html {
+  /* حذف scroll-behavior: smooth دستی اگر در صفحات داینامیک یا اسکرول‌های مکرر مشکل ایجاد می‌کند، 
+     یا نگه داشتن آن برای حالت‌های ساده. پیشنهاد می‌شود اگر Lenis یا اسکریپت اسکرول دارید این خط حذف شود */
+  scroll-behavior: smooth;
+  /* جلوگیری از پرش رندر حین لود شدن اسکرول‌بار */
+  overflow-y: scroll;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  /* بهینه‌سازی رندر فونت و جلوگیری از لگ‌های حرکتی ریز */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 @layer base {

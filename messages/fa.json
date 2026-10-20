@@ -8,6 +8,7 @@
     "bookMeeting": "رزرو جلسه"
   },
   "Navbar": {
+    "home":"خانه",
     "services": "خدمات",
     "projects": "پروژه‌ها",
     "about": "درباره ما",

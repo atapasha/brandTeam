@@ -8,6 +8,7 @@
     "bookMeeting": "Book a meeting"
   },
   "Navbar": {
+    "home":"home",
     "services": "Services",
     "projects": "Projects",
     "about": "About",

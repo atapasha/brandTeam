@@ -24,6 +24,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const links = [
+    { href: "/", label: t("home") },
     { href: "/services", label: t("services") },
     { href: "/projects", label: t("projects") },
     { href: "/about", label: t("about") },

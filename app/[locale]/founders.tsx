@@ -27,7 +27,7 @@ interface Founder {
 
 const founders: Founder[] = [
   {
-    name: "Alex Johnson",
+    name: "Ata Pasha",
     role: "CEO & Founder",
     image: "/image-1.jpg",
     description:
